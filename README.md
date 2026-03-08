@@ -137,4 +137,4 @@ e175-project/
 ---
 
 ## Academic Integrity
-I used chat gpt to help guide myself in creating this project. This AI platform assisted me in writing my codes. However, it also helped me break everything down step by step to understand all code. I wrote all the commands in my ipad with a description to fully understand what exaclty everything means. It also helped me figure out how to organize the `README.md` file so that it is easy to follow along on GitHub.
+I used chat gpt to help guide myself in creating this project. This AI platform assisted me in writing my codes. However, it also helped me break everything down step by step to understand all code. I wrote all the commands in my ipad with a description to fully understand what exactly everything means. It also helped me figure out how to organize the `README.md` file so that it is easy to follow along on GitHub.
