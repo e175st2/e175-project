@@ -1,0 +1,66 @@
+FASTA Sequence Extractor
+================================================================================
+
+SCRIPT PURPOSE AND REQUIRED FEATURES
+-------------------------------------
+Write a bash script called extract_seqs.sh that extracts specific sequences
+from a FASTA file by name. The script should:
+
+- Accept two arguments: a FASTA filename and a text file containing one
+  sequence name per line
+- Extract only the sequences whose name (first word of the header) matches
+  a name in the list
+- Print the matching sequences in FASTA format to stdout
+- Print the number of requested names, the number found, and the number
+  not found to stderr. List each name that was not found.
+- Exit with an error message if arguments are missing or files do not exist
+
+EXPECTED INPUT AND OUTPUT
+--------------------------
+Input: A FASTA file and a names file.
+
+Output (stdout): Matching FASTA sequences.
+Output (stderr): Summary of matches.
+
+EXAMPLE
+-------
+Given the input file all_seqs.fa:
+
+  >BRCA1 DNA repair
+  ATGGATCCAAAG
+  >TP53 tumor suppressor
+  ATGGAGGAGCCG
+  >EGFR growth factor
+  ATGCGACCCTCC
+  >KRAS proto-oncogene
+  ATGACTGAATAT
+
+And the names file targets.txt:
+
+  TP53
+  KRAS
+
+Running:
+  ./extract_seqs.sh all_seqs.fa targets.txt
+
+Expected stdout:
+  >TP53 tumor suppressor
+  ATGGAGGAGCCG
+  >KRAS proto-oncogene
+  ATGACTGAATAT
+
+Expected stderr:
+  Requested: 2
+  Found: 2
+  Not found: 0
+
+SUBMISSION INSTRUCTIONS
+------------------------
+1. Create a public GitHub repository for this assignment.
+2. The repository should contain:
+   - extract_seqs.sh (the script, executable)
+   - README.md explaining what the script does, how to run it, and any
+     dependencies
+   - test.sh (a test script that creates sample input, runs extract_seqs.sh,
+     and checks the output against expected results, reporting pass or fail)
+3. Submit the HTTPS URL of your GitHub repository.
