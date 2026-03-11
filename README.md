@@ -23,13 +23,13 @@ Run the script with two arguments:
 Given `data/all_genes.fa`:
 
 ```
-BRCA1 DNA repair
+>BRCA1 DNA repair
 ATGGATCCAAAG
-TP53 tumor suppressor
+>TP53 tumor suppressor
 ATGGAGGAGCCG
-EGFR growth factor
+>EGFR growth factor
 ATGCGACCCTCC
-KRAS proto-oncogene
+>KRAS proto-oncogene
 ATGACTGAATAT
 ```
 
